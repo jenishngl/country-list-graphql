@@ -8,9 +8,9 @@ Graphql API Endpoint: ```http://localhost:8080/graphql/```
 
 Graphql Schema: ```http://localhost:8080/graphql/schema.graphql```
 
-![Graphql Schema](static/image-4.png)
+Interactive Graphql client ```http://localhost:8080/q/graphql-ui/```
 
-Access ```http://localhost:8080/q/graphql-ui/```
+![Graphql Schema](static/image-4.png)
 
 ![query specific country](static/image.png)
 
