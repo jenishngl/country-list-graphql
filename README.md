@@ -4,13 +4,19 @@ This is a test project to learn building graphql APIs with quarkus
 
 ### Testing the API
 
+Graphql API Endpoint: ```http://localhost:8080/graphql/```
+
+Graphql Schema: ```http://localhost:8080/graphql/schema.graphql```
+
+![Graphql Schema](static/image-4.png)
+
 Access ```http://localhost:8080/q/graphql-ui/```
 
-![query specific country](image.png)
+![query specific country](static/image.png)
 
-![mutation to add new countries](image-2.png)
+![mutation to add new countries](static/image-1.png)
 
-![query all countries](image-3.png)
+![query all countries](static/image-2.png)
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 

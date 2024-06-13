@@ -2,6 +2,7 @@ package org.jjhome;
 
 import java.util.Collections;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -28,11 +29,11 @@ public class CountryListResource {
     @Query
     @Description("List Countries")
     @Produces(MediaType.APPLICATION_JSON)
-    public String country(@DefaultValue("") String code) {
+    public List<Country> country(@DefaultValue("") String code) {
         if (code.isEmpty()) {
-            return countries.stream().map(Country::toString).collect(Collectors.joining(", "));
+            return countries.stream().collect(Collectors.toList());
         } else {
-            return countries.stream().filter(c -> c.getCode().equals(code)).findFirst().map(Country::getName).orElse("");
+            return countries.stream().filter(c -> c.getCode().equals(code)).collect(Collectors.toList());
         }
     }
 
